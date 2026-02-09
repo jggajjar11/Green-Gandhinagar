@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Gandhinagar - Free Doorstep Recycling Pickup</title>
+  <meta name="description" content="Municipal Corporation of Gandhinagar: Free doorstep dry-waste pickup. Segregate once, we collect on time. Sign up with your phone and address." />
+
+  <!-- Tailwind (Play CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;700&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'ui-sans-serif', 'system-ui'],
+            serif: ['Fraunces', 'ui-serif', 'Georgia'],
+          },
+          colors: {
+            brand: {
+              50: '#ECFDF5',
+              100: '#D1FAE5',
+              200: '#A7F3D0',
+              300: '#6EE7B7',
+              400: '#34D399',
+              500: '#10B981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065F46',
+              900: '#064E3B',
+            },
+            sun: {
+              50: '#FFFBEB',
+              100: '#FEF3C7',
+              200: '#FDE68A',
+              300: '#FCD34D',
+              400: '#FBBF24',
+              500: '#F59E0B',
+              600: '#D97706',
+              700: '#B45309',
+              800: '#92400E',
+              900: '#78350F',
+            }
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(2, 6, 23, 0.10)',
+            glow: '0 0 0 6px rgba(16, 185, 129, 0.18)',
+          },
+          borderRadius: {
+            xl2: '1.25rem',
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+  <!-- ============ Top Bar ============ -->
+  <header class="w-full bg-slate-900 text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col gap-2 py-3 sm:flex-row items-center sm:justify-between">
+        <div class="flex items-center gap-2 text-sm">
+          <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-brand-500/20 text-brand-200">♻</span>
+          <span class="opacity-90">Municipal Corporation of Gandhinagar</span>
+        </div>
+        <div class="flex items-center gap-3 text-sm">
+          <a href="#how" class="opacity-90 hover:opacity-100">How it works</a>
+          <span class="opacity-40">•</span>
+          <a href="#rewards" class="opacity-90 hover:opacity-100">Rewards</a>
+          <span class="opacity-40">•</span>
+          <a href="#signup" class="rounded-full bg-white/10 px-3 py-1.5 font-medium hover:bg-white/15">Sign up</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ Hero ============ -->
+  <section class="relative overflow-hidden">
+
+    <!-- Background visuals -->
+    <div class="pointer-events-none absolute inset-0 overflow-hidden">
+      <div class="absolute -top-40 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-brand-400/20 blur-3xl"></div>
+      <div class="absolute -bottom-56 -left-24 h-[520px] w-[520px] rounded-full bg-sun-400/20 blur-3xl"></div>
+      <div class="absolute inset-0 gridlines opacity-40"></div>
+    </div>
+
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid items-center gap-10 py-14 lg:grid-cols-12 lg:py-20">
+
+        <!-- Left -->
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 text-sm font-semibold shadow-soft ring-1 ring-slate-900/5">
+            <span class="inline-flex h-2.5 w-2.5 rounded-full bg-brand-500"></span>
+            <span>New city initiative • Pilot starting this month</span>
+          </div>
+
+          <h1 class="mt-6 font-serif text-4xl leading-tight sm:text-5xl lg:text-6xl">
+            Make recycling <span class="text-brand-700">effortless</span>.
+            <br class="hidden sm:block" />
+            Make Gandhinagar <span class="text-slate-900">proud</span>.
+          </h1>
+
+          <p class="mt-5 max-w-2xl text-lg leading-relaxed text-slate-700">
+            You segregate dry waste once. We pick it up <span class="font-semibold">free of cost</span> from your doorstep -
+            on time, with tracking, and <span class="font-semibold">reward points</span> for consistent recycling.
+          </p>
+
+          <div class="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <a href="#signup" class="inline-flex items-center justify-center rounded-xl bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-soft hover:bg-brand-700">
+              Sign up for free pickup
+              <span class="ml-2">→</span>
+            </a>
+            <a href="#how" class="inline-flex items-center justify-center rounded-xl bg-white px-6 py-3.5 text-base font-semibold text-slate-900 shadow-soft ring-1 ring-slate-900/5 hover:bg-slate-50">
+              See how it works
+            </a>
+          </div>
+
+          <!-- Trust row -->
+          <div class="mt-10 grid max-w-2xl grid-cols-2 gap-4 sm:grid-cols-4">
+            <div class="rounded-2xl bg-white/70 p-4 shadow-soft ring-1 ring-slate-900/5">
+              <div class="text-2xl font-extrabold">0₹</div>
+              <div class="mt-1 text-sm text-slate-600">Doorstep pickup</div>
+            </div>
+            <div class="rounded-2xl bg-white/70 p-4 shadow-soft ring-1 ring-slate-900/5">
+              <div class="text-2xl font-extrabold">2 mins</div>
+              <div class="mt-1 text-sm text-slate-600">Average handover</div>
+            </div>
+            <div class="rounded-2xl bg-white/70 p-4 shadow-soft ring-1 ring-slate-900/5">
+              <div class="text-2xl font-extrabold">Points</div>
+              <div class="mt-1 text-sm text-slate-600">Rewards for streaks</div>
+            </div>
+            <div class="rounded-2xl bg-white/70 p-4 shadow-soft ring-1 ring-slate-900/5">
+              <div class="text-2xl font-extrabold">MCG</div>
+              <div class="mt-1 text-sm text-slate-600">Official initiative</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Signup Card -->
+        <div class="lg:col-span-5">
+          <div id="signup" class="glass noise rounded-3xl border border-white/60 p-6 shadow-soft scroll-mt-20">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h2 class="text-xl font-bold">Get started in 30 seconds</h2>
+                <p class="mt-1 text-sm text-slate-600">We’ll call to confirm your pickup slot.</p>
+              </div>
+              <div class="hidden sm:flex items-center gap-2 rounded-full bg-brand-50 px-3 py-1 text-sm font-semibold text-brand-800 ring-1 ring-brand-200">
+                <span>100% Free</span>
+              </div>
+            </div>
+
+            <form id="leadForm" class="mt-6 space-y-4">
+              <div>
+                <label class="text-sm font-semibold text-slate-700">Full name</label>
+                <input required name="name" type="text" placeholder="e.g. Jainish Gajjar" class="focus-ring mt-1 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-base" />
+              </div>
+
+              <div>
+                <label class="text-sm font-semibold text-slate-700">Phone number</label>
+                <input required name="phone" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" type="tel" placeholder="10-digit mobile" class="focus-ring mt-1 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-base" />
+                <p class="mt-1 text-xs text-slate-500">We’ll never spam. Only service updates.</p>
+              </div>
+
+              <div>
+                <label class="text-sm font-semibold text-slate-700">Area / Sector</label>
+                <select required name="sector" class="focus-ring mt-1 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-base">
+                  <option value="" selected disabled>Select your sector</option>
+                  <option>Sector 1</option>
+                  <option>Sector 2</option>
+                  <option>Sector 3</option>
+                  <option>Sector 4</option>
+                  <option>Sector 5</option>
+                  <option>Sector 6</option>
+                  <option>Sector 7</option>
+                  <option>Sector 8</option>
+                  <option>Sector 9</option>
+                  <option>Sector 10</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="text-sm font-semibold text-slate-700">Address</label>
+                <textarea required name="address" rows="3" placeholder="House no., society, landmark" class="focus-ring mt-1 w-full resize-none rounded-xl border border-slate-200 bg-white px-4 py-3 text-base"></textarea>
+              </div>
+
+              <div class="grid gap-3 sm:grid-cols-2">
+                <div class="rounded-2xl bg-white/70 p-4 ring-1 ring-slate-900/5">
+                  <div class="text-sm font-bold">Pickup days</div>
+                  <div class="mt-1 text-sm text-slate-600">2x per week</div>
+                </div>
+                <div class="rounded-2xl bg-white/70 p-4 ring-1 ring-slate-900/5">
+                  <div class="text-sm font-bold">Waste type</div>
+                  <div class="mt-1 text-sm text-slate-600">Dry (recyclables)</div>
+                </div>
+              </div>
+
+              <button type="submit" class="w-full rounded-xl bg-slate-900 px-6 py-3.5 text-base font-semibold text-white shadow-soft hover:bg-slate-800">
+                Submit & get pickup slot
+              </button>
+
+              <p class="text-center text-xs text-slate-500">
+                By signing up, you agree to be contacted by the Municipal Corporation for this service.
+              </p>
+
+              <div id="successBox" class="hidden rounded-2xl border border-brand-200 bg-brand-50 p-4 text-sm text-brand-900">
+                <div class="font-bold">🎉 You’re in!</div>
+                <div class="mt-1">We’ve received your details. A coordinator will contact you shortly.</div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Micro social proof -->
+          <div class="mt-5 grid grid-cols-3 gap-3">
+            <div class="rounded-2xl bg-white p-4 text-center shadow-soft ring-1 ring-slate-900/5">
+              <div class="text-lg font-extrabold">4.8★</div>
+              <div class="text-xs text-slate-600">Citizen rating</div>
+            </div>
+            <div class="rounded-2xl bg-white p-4 text-center shadow-soft ring-1 ring-slate-900/5">
+              <div class="text-lg font-extrabold">Clean</div>
+              <div class="text-xs text-slate-600">No mess pickup</div>
+            </div>
+            <div class="rounded-2xl bg-white p-4 text-center shadow-soft ring-1 ring-slate-900/5">
+              <div class="text-lg font-extrabold">Local</div>
+              <div class="text-xs text-slate-600">Gandhinagar-first</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ How it works ============ -->
+  <section id="how" class="relative py-14 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <h2 class="font-serif text-3xl sm:text-4xl">How it works</h2>
+          <p class="mt-2 max-w-2xl text-slate-700">
+            Designed for working adults, families, and students. Minimal effort, maximum impact.
+          </p>
+        </div>
+        <a href="#signup" class="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-5 py-3 font-semibold text-white shadow-soft hover:bg-brand-700">
+          Start now
+          <span>→</span>
+        </a>
+      </div>
+
+      <div class="mt-10 grid gap-6 lg:grid-cols-3">
+        <div class="rounded-3xl bg-white p-7 shadow-soft ring-1 ring-slate-900/5 hover:ring-emerald-300 transition-all">
+          <div class="flex items-center justify-between">
+            <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-50 text-2xl">🧺</div>
+            <div class="text-sm font-bold text-brand-700">Step 01</div>
+          </div>
+          <h3 class="mt-5 text-xl font-bold">Keep one dry bag</h3>
+          <p class="mt-2 text-slate-700">
+            Paper, plastic, metal, cartons - keep it clean and dry.
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>• No food waste</li>
+            <li>• No wet garbage</li>
+            <li>• No loose liquids</li>
+          </ul>
+        </div>
+
+        <div class="rounded-3xl bg-white p-7 shadow-soft ring-1 ring-slate-900/5 hover:ring-emerald-300 transition-all">
+          <div class="flex items-center justify-between">
+            <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-sun-50 text-2xl">📍</div>
+            <div class="text-sm font-bold text-brand-700">Step 02</div>
+          </div>
+          <h3 class="mt-5 text-xl font-bold">We pick up from your door</h3>
+          <p class="mt-2 text-slate-700">
+            Scheduled collection twice a week. 2-minute handover.
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>• Uniformed staff</li>
+            <li>• No bargaining / no fees</li>
+            <li>• Society-friendly timings</li>
+          </ul>
+        </div>
+
+        <div class="rounded-3xl bg-white p-7 shadow-soft ring-1 ring-slate-900/5 hover:ring-emerald-300 transition-all">
+          <div class="flex items-center justify-between">
+            <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-50 text-2xl">🏆</div>
+            <div class="text-sm font-bold text-brand-700">Step 03</div>
+          </div>
+          <h3 class="mt-5 text-xl font-bold">Earn points & unlock perks</h3>
+          <p class="mt-2 text-slate-700">
+            Consistency wins. Build a recycling streak for rewards.
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>• Monthly leaderboard (Sector-wise)</li>
+            <li>• Partner discounts (cafés, stores)</li>
+            <li>• City recognition badges</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Rewards / Make it cool ============ -->
+  <section id="rewards" class="relative overflow-hidden py-14 sm:py-20">
+    <div class="pointer-events-none absolute inset-0">
+      <div class="absolute right-[-140px] top-10 h-[520px] w-[520px] rounded-full bg-brand-400/15 blur-3xl"></div>
+      <div class="absolute left-[-180px] bottom-[-180px] h-[560px] w-[560px] rounded-full bg-sun-400/15 blur-3xl"></div>
+    </div>
+
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-12 lg:items-center">
+
+        <div class="lg:col-span-6">
+          <h2 class="font-serif text-3xl sm:text-4xl">Recycling, but make it cool ✨</h2>
+          <p class="mt-3 text-slate-700">
+            The biggest blocker isn’t awareness - it’s motivation.
+            So we built a system that makes recycling feel like a habit you’re proud of.
+          </p>
+
+          <div class="mt-7 space-y-4">
+            <div class="rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-900/5 hover:ring-emerald-300 transition-all">
+              <div class="flex items-start gap-4">
+                <div class="mt-0.5 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-brand-50 text-xl">🔥</div>
+                <div>
+                  <div class="text-lg font-bold">Streak rewards</div>
+                  <p class="mt-1 text-slate-700">Recycle 4 pickups in a row → unlock bonus points.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-900/5 hover:ring-emerald-300 transition-all">
+              <div class="flex items-start gap-4">
+                <div class="mt-0.5 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-sun-50 text-xl">🏙️</div>
+                <div>
+                  <div class="text-lg font-bold">Sector leaderboard</div>
+                  <p class="mt-1 text-slate-700">Friendly competition: which sector is the cleanest this month?</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-900/5 hover:ring-emerald-300 transition-all">
+              <div class="flex items-start gap-4">
+                <div class="mt-0.5 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-brand-50 text-xl">🎁</div>
+                <div>
+                  <div class="text-lg font-bold">Local perks</div>
+                  <p class="mt-1 text-slate-700">Discounts with Gandhinagar cafés, gyms, and stores.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="#signup" class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-6 py-3.5 text-base font-semibold text-white shadow-soft hover:bg-slate-800">
+              Join the city movement
+              <span class="ml-2">→</span>
+            </a>
+            <a href="#faq" class="inline-flex items-center justify-center rounded-xl bg-white px-6 py-3.5 text-base font-semibold text-slate-900 shadow-soft ring-1 ring-slate-900/5 hover:bg-slate-50">
+              Read FAQs
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="rounded-3xl bg-white p-7 shadow-soft ring-1 ring-slate-900/5">
+            <div class="flex items-center justify-between">
+              <div>
+                <div class="text-sm font-semibold text-slate-600">Example</div>
+                <div class="text-2xl font-extrabold">Your Recycling Score</div>
+              </div>
+              <div class="rounded-full bg-brand-50 px-4 py-2 text-sm font-bold text-brand-800 ring-1 ring-brand-200">Sector 7</div>
+            </div>
+
+            <div class="mt-6 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-900/5">
+                <div class="text-sm font-semibold text-slate-600">This month</div>
+                <div class="mt-1 text-3xl font-extrabold">480</div>
+                <div class="mt-1 text-sm text-slate-600">points earned</div>
+              </div>
+              <div class="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-900/5">
+                <div class="text-sm font-semibold text-slate-600">Streak</div>
+                <div class="mt-1 text-3xl font-extrabold">6</div>
+                <div class="mt-1 text-sm text-slate-600">pickups in a row</div>
+              </div>
+            </div>
+
+            <div class="mt-6 rounded-2xl bg-brand-50 p-5 ring-1 ring-brand-200">
+              <div class="flex items-center justify-between gap-4">
+                <div>
+                  <div class="text-sm font-semibold text-brand-900">Next unlock</div>
+                  <div class="mt-1 text-lg font-extrabold text-brand-900">Free compost kit raffle entry</div>
+                  <div class="mt-1 text-sm text-brand-900/80">Complete 2 more pickups</div>
+                </div>
+                <div class="text-4xl">🌱</div>
+              </div>
+              <div class="mt-4 h-2.5 w-full rounded-full bg-white/80">
+                <div class="h-2.5 w-[68%] rounded-full bg-brand-600"></div>
+              </div>
+            </div>
+
+            <div class="mt-6 rounded-2xl bg-slate-900 p-5 text-white">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <div class="text-sm font-semibold opacity-80">Community status</div>
+                  <div class="mt-1 text-lg font-bold">You’re in the top 12% recyclers this month.</div>
+                </div>
+                <div class="text-2xl">🏅</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ What to keep / What not ============ -->
+  <section class="py-14 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-8 lg:grid-cols-12">
+
+        <div class="lg:col-span-5">
+          <h2 class="font-serif text-3xl sm:text-4xl">What can you give?</h2>
+          <p class="mt-3 text-slate-700">
+            Clear rules = less confusion.
+            This makes it easy for busy households to participate.
+          </p>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="grid gap-6 sm:grid-cols-2">
+            <div class="rounded-3xl bg-white p-7 shadow-soft ring-1 ring-slate-900/5 hover:ring-emerald-300 transition-all">
+              <div class="text-sm font-bold text-brand-700">Accepted</div>
+              <h3 class="mt-2 text-xl font-extrabold">Dry recyclables</h3>
+              <ul class="mt-4 space-y-2 text-slate-700">
+                <li>• Paper & cardboard</li>
+                <li>• Plastic bottles & containers</li>
+                <li>• Metal cans</li>
+                <li>• Tetra packs</li>
+                <li>• Glass bottles (wrapped)</li>
+              </ul>
+            </div>
+
+            <div class="rounded-3xl bg-white p-7 shadow-soft ring-1 ring-slate-900/5 hover:ring-emerald-300 transition-all">
+              <div class="text-sm font-bold text-sun-700">Not accepted</div>
+              <h3 class="mt-2 text-xl font-extrabold">Wet & hazardous</h3>
+              <ul class="mt-4 space-y-2 text-slate-700">
+                <li>• Food waste / kitchen waste</li>
+                <li>• Sanitary waste</li>
+                <li>• Medical waste</li>
+                <li>• Broken sharp glass</li>
+                <li>• Batteries / e-waste (coming soon)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-6 rounded-3xl bg-slate-900 p-7 text-white shadow-soft">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <div class="text-sm font-semibold opacity-80">Pro tip</div>
+                <div class="mt-1 text-lg font-bold">Rinse bottles once. Keep it dry. That’s it.</div>
+              </div>
+              <a href="#signup" class="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 font-semibold text-slate-900 hover:bg-slate-100">
+                Sign up
+                <span class="ml-2">→</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Testimonials / Social Proof ============ -->
+  <section class="py-14 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col gap-3">
+        <h2 class="font-serif text-3xl sm:text-4xl">People like you are already in</h2>
+        <p class="max-w-2xl text-slate-700">
+          A civic service works only when citizens feel it’s reliable - and socially valued.
+        </p>
+      </div>
+
+      <div class="mt-10 grid gap-6 lg:grid-cols-3">
+        <div class="rounded-3xl bg-white p-7 shadow-soft ring-1 ring-slate-900/5">
+          <div class="text-sm font-semibold text-slate-600">Sector 2 • Working professional</div>
+          <p class="mt-3 text-lg font-semibold">“The pickup is super quick. It finally feels easy to recycle.”</p>
+          <div class="mt-4 text-sm text-slate-600">- Riya, Infocity</div>
+        </div>
+        <div class="rounded-3xl bg-white p-7 shadow-soft ring-1 ring-slate-900/5">
+          <div class="text-sm font-semibold text-slate-600">Sector 7 • Family</div>
+          <p class="mt-3 text-lg font-semibold">“My kids love the streak points. Now they remind me!”</p>
+          <div class="mt-4 text-sm text-slate-600">- Mehul, Gandhinagar</div>
+        </div>
+        <div class="rounded-3xl bg-white p-7 shadow-soft ring-1 ring-slate-900/5">
+          <div class="text-sm font-semibold text-slate-600">College • Student</div>
+          <p class="mt-3 text-lg font-semibold">“The leaderboard makes it fun. Our hostel is competing.”</p>
+          <div class="mt-4 text-sm text-slate-600">- Ayesha, Uni student</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="py-14 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-12">
+
+        <div class="lg:col-span-5">
+          <h2 class="font-serif text-3xl sm:text-4xl">FAQs</h2>
+          <p class="mt-3 text-slate-700">
+            Addressing the exact objections that stop participation.
+          </p>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="space-y-4">
+
+            <details class="group rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-900/5" open>
+              <summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">
+                Is this really free?
+                <span class="text-2xl text-slate-400 group-open:rotate-45 transition">+</span>
+              </summary>
+              <p class="mt-3 text-slate-700">
+                Yes. The service is fully funded by the Municipal Corporation of Gandhinagar.
+                You never pay the pickup staff.
+              </p>
+            </details>
+
+            <details class="group rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-900/5">
+              <summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">
+                What if I miss a pickup day?
+                <span class="text-2xl text-slate-400 group-open:rotate-45 transition">+</span>
+              </summary>
+              <p class="mt-3 text-slate-700">
+                No problem. Your streak pauses, not resets. You can continue from the next successful pickup.
+              </p>
+            </details>
+
+            <details class="group rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-900/5">
+              <summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">
+                Do I need to store waste for long?
+                <span class="text-2xl text-slate-400 group-open:rotate-45 transition">+</span>
+              </summary>
+              <p class="mt-3 text-slate-700">
+                Pickup is twice a week, so storage stays minimal.
+                A single bag in your balcony/utility area is enough.
+              </p>
+            </details>
+
+            <details class="group rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-900/5">
+              <summary class="flex cursor-pointer list-none items-center justify-between text-lg font-bold">
+                Where does the waste go?
+                <span class="text-2xl text-slate-400 group-open:rotate-45 transition">+</span>
+              </summary>
+              <p class="mt-3 text-slate-700">
+                Collected dry waste is sent to authorized sorting and recycling partners.
+                The Corporation audits the process.
+              </p>
+            </details>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Final CTA ============ -->
+  <section class="relative overflow-hidden py-16">
+    <div class="pointer-events-none absolute inset-0">
+      <div class="absolute inset-0 bg-gradient-to-r from-brand-700 via-brand-600 to-slate-900 opacity-95"></div>
+      <div class="absolute inset-0 noise opacity-40"></div>
+    </div>
+
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-12 lg:items-center">
+        <div class="lg:col-span-7 text-white">
+          <h2 class="font-serif text-3xl sm:text-4xl">Let’s make Gandhinagar the cleanest city in Gujarat.</h2>
+          <p class="mt-3 max-w-2xl text-white/85">
+            Your one small habit creates a massive city-level impact.
+            Join today - it’s free, fast, and surprisingly satisfying.
+          </p>
+        </div>
+        <div class="lg:col-span-5">
+          <div class="rounded-3xl bg-white p-6 shadow-soft">
+            <div class="text-sm font-semibold text-slate-600">Ready?</div>
+            <div class="mt-1 text-xl font-extrabold">Sign up now</div>
+            <p class="mt-2 text-sm text-slate-600">Takes under 1 minute.</p>
+            <a href="#signup" class="mt-5 inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-6 py-3.5 text-base font-semibold text-white shadow-soft hover:bg-slate-800">
+              Go to sign up
+              <span class="ml-2">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Footer ============ -->
+  <footer class="bg-slate-950 text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 py-12 lg:grid-cols-12">
+
+        <div class="lg:col-span-5">
+          <div class="flex items-center gap-3">
+            <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/10 text-xl">♻</div>
+            <div>
+              <div class="text-lg font-extrabold">Green Gandhinagar</div>
+              <div class="text-sm text-white/70">Municipal Corporation initiative</div>
+            </div>
+          </div>
+          <p class="mt-4 max-w-md text-sm leading-relaxed text-white/70">
+            Free doorstep dry-waste collection to increase recycling participation.
+            Built for citizens - simple, rewarding, and reliable.
+          </p>
+        </div>
+
+        <div class="lg:col-span-3">
+          <div class="text-sm font-bold">Quick links</div>
+          <ul class="mt-3 space-y-2 text-sm text-white/70">
+            <li><a class="hover:text-white" href="#how">How it works</a></li>
+            <li><a class="hover:text-white" href="#rewards">Rewards</a></li>
+            <li><a class="hover:text-white" href="#faq">FAQs</a></li>
+            <li><a class="hover:text-white" href="#signup">Sign up</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-4">
+          <div class="text-sm font-bold">Helpline</div>
+          <div class="mt-3 rounded-2xl bg-white/5 p-5">
+            <div class="text-sm text-white/70">For pickup issues & schedule changes</div>
+            <div class="mt-2 text-lg font-extrabold">+91 79 0000 0000</div>
+            <div class="mt-1 text-sm text-white/60">(Replace with official number)</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="border-t border-white/10 py-6 text-sm text-white/60">
+        <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div>© <span id="year"></span> Municipal Corporation of Gandhinagar</div>
+          <div class="flex items-center gap-3">
+            <span class="opacity-60">Made for citizens • Built with care</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
